@@ -1,0 +1,167 @@
+h2, h3 {
+  /* multiple selectors*/
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  text-align: center;
+}
+
+/* Big Heading */
+.big-heading {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/*color sections*/
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', 'sans-serif';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 1.2rem;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Title Section */
+/* hierarchical selector .... !spacing is imp!, modifying a general class for a particular section*/
+#title .container-fluid {
+  /*On left is parent, on right is child, prefer this than combined selector*/
+  padding: 3% 15% 7%;
+  text-align: left;
+  /* position: relative; */
+  z-index: -1;
+  /* z-index is default 0 for every element on webpage */
+}
+
+.title-image {
+  width: 20%;
+  /* of its parent i.e col-lg-6 */
+  right: 25%;
+  /* 25% from right of page*/
+  transform: rotate(25deg);
+  position: absolute;
+}
+
+/* Features */
+.feature-icons {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icons:hover {
+  color: #ff4c68;
+}
+
+.feature-txt {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.feature-desc {
+  color: #8f8f8f;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+#features {
+  position: relative;
+}
+
+/* Testimonial Section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 50px 20px 20px;
+}
+
+/* Press Section */
+#press {
+  background-color: #ef8172;
+  padding: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Carousel Section, covered in container-fluid padding */
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/*Making Mobile Friendly*/
+@media (max-width: 992px) {
+
+  /*992px and less width, for mobile-friendly*/
+  #title {
+    text-align: center;
+    /* we need center aligned in mobile mode*/
+  }
+
+  .title-image {
+    position: static;
+    width: 60%;
+    transform: rotate(0);
+    /* absolute rotation not -25 here */
+  }
+}
+
+/* Call to Action-> covered as colored-section */
+/* Footer */
+#footer .container-fluid {
+  /* hierarchical selector .... !spacing is imp!*/
+  padding: 5% 15%;
+}
+
+.footer-icon {
+  margin: 10px;
+}
