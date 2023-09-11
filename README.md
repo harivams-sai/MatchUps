@@ -1,3 +1,1 @@
 # MatchUps
-
-Find your buddy.
